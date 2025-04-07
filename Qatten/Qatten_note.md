@@ -50,3 +50,23 @@ T(s' \mid s, a^1=\text{右移}, a^2=\text{下移}) =
 **TarMAC**:通过“发送者-接受者”软注意力机制与多轮协作推理，实现智能体之间的有针对性持续通信。
 
 ---
+
+## Qatten 对Qtot与Qi之间关系的理论分析
+首先对于Qtot和Qi,有如下的关系：
+![alt text](image-1.png)
+对于每一个Qi,都会对Qtot产生正向或负向的影响，这意味着Qtot对Qi的偏导不为0（若等于0，则说明agent i游离在多智能体系统之外，不对Qtot产生任何影响，但是允许偏导数游有零点存在）：
+![alt text](image-2.png)
+为简化问题，**固定状态s,研究智能体i动作空间中极大指点a0,在此处，Qi关于a0的偏导数为0**，因此Qtot关于a0的偏导数为：
+![alt text](image-3.png) 即![alt text](image-4.png)
+
+对Qi（ai）进行局部展开，有：
+![alt text](image-5.png) （αβ均为常数，**a0为极大值点，且一阶偏导为0**）
+
+由此，对于极值点a0附件，有Qtot与Qi的衍生定理一，使Qtot的局部展开有以下形式：
+![alt text](image-6.png)
+c(s)是依赖于状态s的常数；λi,h(s)是所有h阶偏导数的线性泛化![alt text](image-7.png)，并随着h呈超指数阶衰减。
+
+## Qatten 方法
+![alt text](image-8.png)
+
+## 一些思考总结
