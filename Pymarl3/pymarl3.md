@@ -114,7 +114,7 @@ pymarl3 提出了两种创新实现方案：**动态置换网络（Dynamic Permu
  **实体关联动作意味着每个实体与每个动作间存在一一对应关系，例如《星际争霸》微操场景中的"攻击哪个敌人"或足球游戏中的"传球给哪位队友"**。因此，$\mathcal{a}_{\mathrm{equiv}}$ ∈ $\mathcal{A}_{\mathrm{equiv}}$  应具有对oi排列的等变性，而 $\mathcal{a}_{\mathrm{inv}}$ ∈ $\mathcal{A}_{\mathrm{inv}}$ 则应具有不变性。
 
  ### 结构与理论
- 利用神经网络拟合出任意的置换矩阵g,使得
+任意的置换矩阵g,使得
  - g(oi)表示对m个实体特征顺序进行置换;
  - g($\mathcal{a}_{\mathrm{equiv}}$,$\mathcal{a}_{\mathrm{inv}}$) 表示对$\mathcal{a}_{\mathrm{equiv}}$顺序置换，但是保持 $\mathcal{a}_{\mathrm{inv}}$ 不变。
 
